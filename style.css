@@ -83,6 +83,9 @@ body {
   border: none;
   border-radius: 5px;
   cursor: pointer;
+  color: #fff;
+  font-weight: 700;
+  font-size: 14px;
 }
 
 .login a {
