@@ -1,0 +1,95 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: url(./images/bg-intro-desktop.png);
+  background-color: hsl(0, 100%, 74%);
+}
+
+.container {
+  width: 1150px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.container .learn {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #fff;
+}
+
+.container .learn h1 {
+  margin-bottom: 20px;
+  width: 350px;
+  font-size: 36px;
+}
+
+.container .learn p {
+  width: 500px;
+}
+
+.container .login .form label {
+  font-size: 10px;
+  text-align: center;
+  width: 400px;
+  color: hsl(246, 25%, 77%);
+}
+
+.container .login {
+  padding: 10px;
+  width: 550px;
+}
+
+.container .login button {
+  padding: 15px 15px;
+  width: 100%;
+  margin-bottom: 20px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  background: hsl(248, 32%, 49%);
+  color: #fff;
+  border-radius: 5px;
+}
+
+.login .form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 25px;
+  background: #fff;
+  padding: 30px 10px;
+  border-radius: 5px;
+}
+
+.login .form input {
+  width: 80%;
+  padding: 10px 15px;
+  outline: none;
+}
+
+.login .form [type="submit"] {
+  background: hsl(154, 59%, 51%);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.login a {
+  font-weight: 700;
+}
+
+.login .form a {
+  color: hsl(0, 100%, 74%);
+  font-weight: 700;
+}
