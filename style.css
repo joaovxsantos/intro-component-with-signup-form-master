@@ -16,9 +16,9 @@ body {
 }
 
 .container {
-  width: 1150px;
   display: flex;
   justify-content: space-evenly;
+  width: 80%;
 }
 
 .container .learn {
@@ -41,7 +41,7 @@ body {
 .container .login .form label {
   font-size: 10px;
   text-align: center;
-  width: 400px;
+  width: 75%;
   color: hsl(246, 25%, 77%);
 }
 
@@ -95,4 +95,54 @@ body {
 .login .form a {
   color: hsl(0, 100%, 74%);
   font-weight: 700;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .container .learn {
+    align-items: center;
+    padding: 30px;
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .container .learn {
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    text-align: center;
+  }
+
+  .container .learn h1 {
+    width: 220px;
+    font-size: 24px;
+  }
+
+  .container .learn p {
+    width: 300px;
+    font-size: 13px;
+  }
+
+  .container .login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .container .login button {
+    width: 60%;
+    padding: 25px 15px;
+  }
+
+  .login .form {
+    width: 60%;
+  }
 }
