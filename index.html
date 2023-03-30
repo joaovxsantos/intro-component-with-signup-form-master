@@ -20,18 +20,43 @@
 
     <div class="login">
       <button><a>Try it free 7 days</a> then $20/mo. thereafter</button>
+
       <div class="form">
-        <input type="text" placeholder="First Name" required>
-        <input type="text" placeholder="Last Name" required>
-        <input type="email" placeholder="Email Adress" required>
-        <input type="password" placeholder="Password" required>
-        <input type="submit" value="CLAIM YOUR FREE TRIAL">
+
+        <div class="input">
+          <ion-icon name="alert-circle-outline"></ion-icon>
+          <input type="text" placeholder="First Name" required>
+          <p class="alert">First name cannot be empty</p>
+        </div>
+
+        <div class="input">
+          <ion-icon name="alert-circle-outline"></ion-icon>
+          <input type="text" placeholder="Last Name" required>
+          <p class="alert">Last Name cannot be empty</p>
+        </div>
+
+        <div class="input">
+          <ion-icon name="alert-circle-outline"></ion-icon>
+          <input type="email" placeholder="Email Adress" required>
+          <p class="alert">Looks like this is not an email</p>
+        </div>
+
+        <div class="input">
+          <ion-icon name="alert-circle-outline"></ion-icon>
+          <input type="password" placeholder="Password" required>
+          <p class="alert">Password cannot be empty</p>
+        </div>
+
+        <input type="submit" value="CLAIM YOUR FREE TRIAL" id="submit">
+
         <label>By clicking the button, you are agreeing to our <a>Terms and Services.</a></label>
       </div>
     </div>
   </div>
 
-
+  <script src="./script.js"></script>
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
 
 </html>
